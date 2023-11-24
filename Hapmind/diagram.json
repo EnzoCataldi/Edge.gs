@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "author": "Enzo Silva",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -172.8,
+      "left": -206.36,
+      "attrs": {}
+    },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": -111.38, "left": -74.48, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -10.8,
+      "left": 6.6,
+      "rotate": 90,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -39.6,
+      "left": 6.6,
+      "rotate": 90,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -24.85,
+      "left": -48,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd1",
+      "top": -128,
+      "left": 53.6,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 3.95,
+      "left": -48,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "imu1:SCL", "esp:22", "yellow", [ "v0" ] ],
+    [ "esp:GND.2", "imu1:GND", "black", [ "v9.6", "h76.8" ] ],
+    [ "imu1:VCC", "esp:3V3", "red", [ "v-48", "h-220.72" ] ],
+    [ "esp:21", "imu1:SDA", "white", [ "h28.8", "v-19.2", "h48" ] ],
+    [ "esp:3V3", "lcd1:VCC", "red", [ "h0.15", "v-28.8", "h240", "v86.4" ] ],
+    [ "esp:GND.2", "lcd1:GND", "black", [ "v-19.2", "h153.6", "v9.6" ] ],
+    [ "esp:21", "lcd1:SDA", "white", [ "h28.8", "v48", "h86.4", "v-29" ] ],
+    [ "esp:22", "lcd1:SCL", "yellow", [ "h19.2", "v-28.8", "h105.6", "v86.4" ] ],
+    [ "esp:4", "led2:A", "green", [ "h19.2", "v9.6" ] ],
+    [ "r2:2", "led2:C", "green", [ "v0" ] ],
+    [ "esp:2", "led1:A", "green", [ "h19.2", "v9.6" ] ],
+    [ "esp:GND.2", "r2:1", "black", [ "h9.6", "v105.6", "h19.2", "v19.2" ] ],
+    [ "led1:C", "r1:2", "green", [ "h0" ] ],
+    [ "esp:GND.2", "r1:1", "black", [ "v0", "h9.6", "v153.6" ] ]
+  ],
+  "dependencies": {}
+}
