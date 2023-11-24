@@ -10,5 +10,6 @@ link do projeto:https://wokwi.com/projects/382283200705836033
 
 Instruções: Manipule as Variáveis do Acelerômetro e giroscopio para Visualizar os Resultados. Uma Vez Iniciado o Simulador
 
+LINK DO VIDEO:https://youtu.be/Akb_fvKXngI
 
 
