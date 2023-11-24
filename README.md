@@ -8,7 +8,7 @@ solução: Com ESP32, acelerômetro e giroscópio, este teste usa LEDs. Azul par
 
 link do projeto:https://wokwi.com/projects/382283200705836033
 
-Instruções: Manipule as Variáveis do Acelerômetro para Visualizar os Resultados. Uma Vez Iniciado o Simulador
+Instruções: Manipule as Variáveis do Acelerômetro e giroscopio para Visualizar os Resultados. Uma Vez Iniciado o Simulador
 
 
 
