@@ -1,6 +1,6 @@
 # edge.gs
 Enzo Silva 
-rm9928
+rm99286
 
 O problema: A saúde mental e o movimento do corpo estão entrelaçados de maneira íntima. O corpo muitas vezes revela o que a mente tenta esconder. Quando nos movemos, expressamos emoções. Agitação, rigidez ou lentidão podem ser sinais visíveis de ansiedade, estresse ou depressão. Observar atentamente esses sinais físicos oferece informações valiosas sobre o estado emocional.
 
